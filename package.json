@@ -34,7 +34,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "run-s lint test",
+      "pre-commit": "run-s lint build test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -68,6 +68,7 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
+    "iterable-operator": "^0.13.6",
     "rxjs": "^7.0.0-rc.2"
   }
 }
