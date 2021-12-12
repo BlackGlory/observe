@@ -18,7 +18,9 @@ export function observeStateChanges(): Observable<void> {
 
 function observePushState(): Observable<void> {
   return new Observable(observer => {
-    if (!pushStateHookRegistered) registerPushStateHook()
+    if (!pushStateHookRegistered) {
+      registerPushStateHook()
+    }
     pushStateHooks.add(observer)
     return () => pushStateHooks.delete(observer)
   })
@@ -26,7 +28,9 @@ function observePushState(): Observable<void> {
 
 function observeReplaceState(): Observable<void> {
   return new Observable(observer => {
-    if (!replaceStateHookRegistered) registerReplaceStateHook()
+    if (!replaceStateHookRegistered) {
+      registerReplaceStateHook()
+    }
     replaceStateHooks.add(observer)
     return () => replaceStateHooks.delete(observer)
   })
