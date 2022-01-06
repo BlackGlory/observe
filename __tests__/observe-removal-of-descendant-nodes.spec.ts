@@ -1,7 +1,6 @@
 import { Observable, firstValueFrom } from 'rxjs'
 import { observeRemovalOfDescendantNodes }
   from '@src/observe-removal-of-descendant-nodes'
-import 'core-js/web/queue-microtask'
 
 afterEach(() => {
   document.body.innerHTML = ''

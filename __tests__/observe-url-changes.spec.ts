@@ -1,6 +1,5 @@
 import { observeUrlChanges } from '@src/observe-url-changes'
 import { Observable, firstValueFrom } from 'rxjs'
-import 'core-js/web/queue-microtask'
 
 describe('observeUrlChanges(): Observable<void>', () => {
   it('push when url changed', async () => {

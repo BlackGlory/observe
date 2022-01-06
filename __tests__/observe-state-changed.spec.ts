@@ -1,7 +1,6 @@
 import { Observable, firstValueFrom } from 'rxjs'
 import { observeStateChanges } from '@src/observe-state-changes'
 import { waitForStateChanged } from '@blackglory/wait-for'
-import 'core-js/web/queue-microtask'
 
 describe('observeStateChanges(): Observable<void>', () => {
   it('push when location.hash changed', async () => {
