@@ -1,18 +1,18 @@
 import { fromMutationObserver } from '@utils/from-mutation-observer'
 import { filter, map } from 'rxjs/operators'
 import { Observable } from 'rxjs'
-import { IterableOperator } from 'iterable-operator/lib/es2015/style/chaining'
+import * as Iter from 'iterable-operator'
 
 export function observeRemovalOfDescendantNodes(node: Node): Observable<Node[]> {
   return fromMutationObserver(
     node
   , { childList: true, subtree: true }
   ).pipe(
-    map(records => new IterableOperator(records)
-      .map(x => x.removedNodes)
-      .flatten<Node>()
-      .toArray()
-    )
+    map(records => Iter.toArray(
+      Iter.flatten<Node>(
+        Iter.map(records, x => x.removedNodes)
+      )
+    ))
   , filter(removedNodes => removedNodes.length > 0)
   )
 }
