@@ -5,7 +5,9 @@
   "keywords": [
     "DOM"
   ],
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "sideEffects": false,
@@ -30,7 +32,6 @@
     }
   },
   "devDependencies": {
-    "@blackglory/jest-matchers": "^0.2.1",
     "@blackglory/wait-for": "^0.5.1",
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
