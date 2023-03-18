@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/BlackGlory/observe/compare/v0.1.7...v0.2.0) (2023-03-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Renamed `observeUrlChanges` to `observeURLChanges`
+* - CommonJS => ESM.
+- The minimal version of Node.js is 16.
+
+* rename `observeUrlChanges` to `observeURLChanges` ([cab37e2](https://github.com/BlackGlory/observe/commit/cab37e2e1d548109329a265fd4768afc430e250c))
+* upgrade dependencies ([cb6e588](https://github.com/BlackGlory/observe/commit/cb6e588409ce2a3235b4026e73a524314bf0a42f))
+
 ### [0.1.7](https://github.com/BlackGlory/observe/compare/v0.1.6...v0.1.7) (2022-11-01)
 
 ### [0.1.6](https://github.com/BlackGlory/observe/compare/v0.1.5...v0.1.6) (2022-08-06)
