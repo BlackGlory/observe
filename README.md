@@ -9,9 +9,9 @@ yarn add @blackglory/observe
 ```
 
 ## API
-### observeUrlChanges
+### observeURLChanges
 ```ts
-function observeUrlChanges(): Observable<void>
+function observeURLChanges(): Observable<void>
 ```
 
 ### observeStateChanges

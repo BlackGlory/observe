@@ -1,9 +1,9 @@
-import { observeUrlChanges } from '@src/observe-url-changes.js'
+import { observeURLChanges } from '@src/observe-url-changes.js'
 import { Observable, firstValueFrom } from 'rxjs'
 
-describe('observeUrlChanges(): Observable<void>', () => {
+describe('observeURLChanges(): Observable<void>', () => {
   it('push when url changed', async () => {
-    const result = observeUrlChanges()
+    const result = observeURLChanges()
     queueMicrotask(() => location.hash = 'test')
     const proResult = await firstValueFrom(result)
 

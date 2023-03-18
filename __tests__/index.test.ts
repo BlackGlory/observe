@@ -2,7 +2,7 @@ import * as Index from '@src/index.js'
 
 test('Index', () => {
   expect(Object.keys(Index).sort()).toEqual([
-    'observeUrlChanges'
+    'observeURLChanges'
   , 'observeStateChanges'
   , 'observeAdditionOfDescendantNodes'
   , 'observeRemovalOfDescendantNodes'
