@@ -1,6 +1,6 @@
 import { Observable, firstValueFrom } from 'rxjs'
 import { observeAdditionOfDescendantNodes }
-  from '@src/observe-addtion-of-descendant-nodes'
+  from '@src/observe-addtion-of-descendant-nodes.js'
 
 afterEach(() => {
   document.body.innerHTML = ''

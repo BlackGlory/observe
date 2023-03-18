@@ -1,5 +1,5 @@
 import { Observable, firstValueFrom } from 'rxjs'
-import { observeStateChanges } from '@src/observe-state-changes'
+import { observeStateChanges } from '@src/observe-state-changes.js'
 import { waitForStateChanged } from '@blackglory/wait-for'
 
 describe('observeStateChanges(): Observable<void>', () => {

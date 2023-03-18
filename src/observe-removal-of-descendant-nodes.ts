@@ -1,4 +1,4 @@
-import { fromMutationObserver } from '@utils/from-mutation-observer'
+import { fromMutationObserver } from '@utils/from-mutation-observer.js'
 import { filter, map } from 'rxjs/operators'
 import { Observable } from 'rxjs'
 import * as Iter from 'iterable-operator'
