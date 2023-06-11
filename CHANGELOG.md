@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/BlackGlory/observe/compare/v0.2.0...v0.2.1) (2023-06-11)
+
+
+### Bug Fixes
+
+* export src ([eabc3b1](https://github.com/BlackGlory/observe/commit/eabc3b14d59be9ec3b851abb14d2f1fc83a8e0ed))
+
 ## [0.2.0](https://github.com/BlackGlory/observe/compare/v0.1.7...v0.2.0) (2023-03-18)
 
 
