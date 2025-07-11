@@ -3,12 +3,12 @@ import { filter, map } from 'rxjs/operators'
 import { Observable } from 'rxjs'
 import * as Iter from 'iterable-operator'
 
-export function observeRemovalOfDescendantNodes(node: Node): Observable<Node[]> {
+export function observeAdditionsOfDescendantNodes(node: Node): Observable<Node[]> {
   return observeMutations(
     node
   , { childList: true, subtree: true }
   ).pipe(
-    map(records => Iter.toArray(Iter.flatMap(records, x => x.removedNodes)))
-  , filter(removedNodes => removedNodes.length > 0)
+    map(records => Iter.toArray(Iter.flatMap(records, x => x.addedNodes)))
+  , filter(addedNodes => addedNodes.length > 0)
   )
 }

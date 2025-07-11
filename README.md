@@ -19,12 +19,12 @@ function observeURLChanges(): Observable<void>
 function observeStateChanges(): Observable<void>
 ```
 
-### observeAdditionOfDescendantNodes
+### observeAdditionsOfDescendantNodes
 ```ts
-function observeAdditionOfDescendantNodes(node: Node): Observable<Node[]>
+function observeAdditionsOfDescendantNodes(node: Node): Observable<Node[]>
 ```
 
-### observeRemovalOfDescendantNodes
+### observeRemovalsOfDescendantNodes
 ```ts
-function observeRemovalOfDescendantNodes(node: Node): Observable<Node[]>
+function observeRemovalsOfDescendantNodes(node: Node): Observable<Node[]>
 ```
