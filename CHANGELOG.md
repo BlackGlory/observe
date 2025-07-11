@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/BlackGlory/observe/compare/v0.2.1...v0.3.0) (2025-07-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v16 => v22
+* - Renamed `observeAdditionOfDescendantNodes` to `observeAdditionsOfDescendantNodes`.
+- Renamed `observeRemovalOfDescendantNodes` to `observeRemovalsOfDescendantNodes`.
+
+### Features
+
+* add `observeMutations` ([6fc3745](https://github.com/BlackGlory/observe/commit/6fc3745a4c8f3e4031bd9481be90ed47bc8869d2))
+
+
+* rename ([c50c42b](https://github.com/BlackGlory/observe/commit/c50c42b65a8329b30970c6d1f35796f605e49a79))
+* upgrade dependencies ([2ead2e7](https://github.com/BlackGlory/observe/commit/2ead2e7263886ef9b2fab7abb8b6cad8c0d6ca85))
+
 ### [0.2.1](https://github.com/BlackGlory/observe/compare/v0.2.0...v0.2.1) (2023-06-11)
 
 
