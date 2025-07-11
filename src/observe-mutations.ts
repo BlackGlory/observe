@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs'
 
-export function fromMutationObserver(
+export function observeMutations(
   ...args: Parameters<MutationObserver['observe']>
 ): Observable<MutationRecord[]> {
   return new Observable(subscriber => {
