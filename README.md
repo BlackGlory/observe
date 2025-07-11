@@ -28,3 +28,10 @@ function observeAdditionsOfDescendantNodes(node: Node): Observable<Node[]>
 ```ts
 function observeRemovalsOfDescendantNodes(node: Node): Observable<Node[]>
 ```
+
+### observeMutations
+```ts
+function observeMutations(
+  ...args: Parameters<MutationObserver['observe']>
+): Observable<MutationRecord[]>
+```
