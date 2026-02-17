@@ -11,6 +11,7 @@ export function observeStateChanges(): Observable<void> {
     observePushState()
   , observeReplaceState()
   , fromEvent(window, 'popstate')
+  , fromEvent(window, 'hashchange')
   ).pipe(
     map(_ => undefined)
   )

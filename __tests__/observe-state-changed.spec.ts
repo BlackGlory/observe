@@ -5,7 +5,7 @@ import { waitForStateChanged } from '@blackglory/wait-for'
 describe('observeStateChanges(): Observable<void>', () => {
   it('push when location.hash changed', async () => {
     const result = observeStateChanges()
-    queueMicrotask(() => location.hash = 'test')
+    queueMicrotask(() => location.hash = '#test')
     const proResult = await firstValueFrom(result)
 
     expect(result).toBeInstanceOf(Observable)
