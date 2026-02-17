@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/BlackGlory/observe/compare/v0.3.0...v0.3.1) (2026-02-17)
+
+
+### Features
+
+* **observe-state-changes:** listen the `hashchange` event ([4e9e610](https://github.com/BlackGlory/observe/commit/4e9e610abc051a6c83457cca218efb5eb3b43669))
+
 ## [0.3.0](https://github.com/BlackGlory/observe/compare/v0.2.1...v0.3.0) (2025-07-11)
 
 
