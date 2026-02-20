@@ -1,6 +1,6 @@
 {
   "name": "@blackglory/observe",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A module for observing things happening.",
   "keywords": [
     "DOM"
