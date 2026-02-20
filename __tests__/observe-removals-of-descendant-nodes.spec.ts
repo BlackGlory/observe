@@ -6,12 +6,12 @@ afterEach(() => {
 })
 
 describe('observeRemovalsOfDescendantNodes', () => {
-  it('push when new children node is added', async () => {
+  it('push when a child node is removed', async () => {
     const node = document.createElement('div')
     document.body.append(node)
 
     const result = observeRemovalsOfDescendantNodes(document.body)
-    queueMicrotask(() => document.body.append(node))
+    queueMicrotask(() => node.remove())
     const proResult = await firstValueFrom(result)
 
     expect(result).toBeInstanceOf(Observable)

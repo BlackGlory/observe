@@ -6,7 +6,7 @@ afterEach(() => {
 })
 
 describe('observeAdditionsOfDescendantNodes', () => {
-  it('push when new children node is added', async () => {
+  it('push when a child node is added', async () => {
     const node = document.createElement('div')
 
     const result = observeAdditionsOfDescendantNodes(document.body)
